@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./ActiveQuiz.module.css";
+import AnswersList from "./AnswersList/AnswersList";
 
 const ActiveQuiz = (props) => {
   return (
@@ -7,17 +8,12 @@ const ActiveQuiz = (props) => {
       <p className={classes.Question}>
         <span>
           <strong>1. </strong>
-          Какой сейчас год?
+          {props.question}
         </span>
 
         <small>4 из 12</small>
       </p>
-      <ul>
-        <li>1950</li>
-        <li>2465</li>
-        <li>2021</li>
-        <li>1265</li>
-      </ul>
+      <AnswersList answers={props.answers} onAnswerClick={props.onAnswerClick}/>
     </div>
   );
 };
