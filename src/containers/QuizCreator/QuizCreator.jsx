@@ -143,7 +143,6 @@ export default class QuizCreator extends Component {
     });
   }
   selectChangeHandler = (e) => {
-    console.log(e.target.value);
     this.setState({
       rightAnswerId: +e.target.value,
     });
