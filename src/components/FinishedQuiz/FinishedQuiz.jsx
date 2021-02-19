@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../UI/Button/Button";
 import classes from "./FinishedQuiz.module.css";
 
@@ -36,7 +37,10 @@ const FinishedQuiz = (props) => {
         <Button type="primary" onClick={props.onRetry}>
           Повторить
         </Button>
-        <Button type="success">Перейти в список тестов</Button>
+
+        <Link to="/">
+          <Button type="success">Перейти в список тестов</Button>
+        </Link>
       </div>
     </div>
   );
