@@ -26,7 +26,7 @@ class QuizList extends Component {
       <div className={classes.QuizList}>
         <div>
           <h1>Список тестов</h1>
-          {this.props.loading && this.props.quizes.length !== 0 ? (
+          {this.props.loading ? (
             <Loader />
           ) : (
             <ul>{this.renderQuizes()}</ul>
