@@ -3,7 +3,6 @@ import Button from "../../components/UI/Button/Button";
 import Input from "../../components/UI/Input/Input";
 import classes from "./Auth.module.css";
 import is from "is_js";
-import axios from "../../axios/axios-quiz";
 import { connect } from "react-redux";
 import { auth } from "../../store/actions/auth";
 
